@@ -6,7 +6,12 @@ function getComputerChoice() {
   };
 
   const randomKey = Math.floor(Math.random() * 3);
-  const choice = choices[String(randomKey)];
+  const compChoice = choices[String(randomKey)];
 
-  return choice;
+  return compChoice;
+}
+
+function getHumanChoice() {
+  const humanChoice = prompt("Enter your choice (case insensitive)");
+  return humanChoice;
 }
