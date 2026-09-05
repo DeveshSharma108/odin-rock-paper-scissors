@@ -135,7 +135,7 @@ body {
   align-self: self-start;
 }
 
-.button#restart {
+.button#reset {
   font-size: 24px;
   font-weight: 900;
 }
