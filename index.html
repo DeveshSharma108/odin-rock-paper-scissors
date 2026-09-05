@@ -3,10 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissorrs</title>
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>To play the game open console</h1>
+    <div class="device-base">
+      <div class="screen-area">
+        <div class="scorecard">
+          <div class="player-score">Player<span>0/5</span></div>
+          <div class="computer-score">CPU<span>0/5</span></div>
+        </div>
+        <div class="choices-display">
+          <div class="player-choice-display"><p>✂️</p></div>
+          <div class="vertical-line"></div>
+          <div class="computer-choice-display"><p>🪨</p></div>
+        </div>
+        <div class="information-area"><p>Choose your weapon...</p></div>
+      </div>
+      <div class="control-area">
+        <div class="control-buttons">
+          <div class="button">R</div>
+          <div class="button" id="second">P</div>
+          <div class="button">S</div>
+        </div>
+        <div class="system-buttons">
+          <div class="button" id="restart">⟳</div>
+          <div class="button" id="power">⏻</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
