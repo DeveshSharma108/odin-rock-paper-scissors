@@ -1,4 +1,4 @@
-* {
+make the UI less contrasty * {
   padding: 0px;
   margin: 0px;
   border: none;
@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Press Start 2P", monospace;
-  background-color: honeydew;
+  background-color: #d9dfcf;
 }
 
 .device-base {
@@ -144,4 +144,8 @@ body {
   align-self: self-start;
   font-size: 24px;
   font-weight: 900;
+}
+
+.hidden {
+  visibility: hidden;
 }

@@ -1,4 +1,4 @@
-let powerON = true;
+let powerON = false;
 const emoji = { rock: "🪨", paper: "📄", scissors: "✂️", default: "❔" };
 
 let computerScore = 0;
@@ -59,6 +59,10 @@ function reset() {
 
 function togglePower() {
   powerON = !powerON;
+  const screenArea = document.querySelector(".screen-area");
+  for (const child of screenArea.children) {
+    child.classList.toggle("hidden");
+  }
 }
 
 function playGame(playerChoice, computerChoice) {
